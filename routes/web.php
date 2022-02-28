@@ -14,7 +14,7 @@ use App\Http\Controllers\EmployeeProfileController;
 |
 */
 
-Route::get('/', [EmployeeProfileController::class, 'index']);
+Route::get('/', [EmployeeProfileController::class, 'index'])->name('employee-profiles');
 Route::get('/employee-profiles/create', [EmployeeProfileController::class, 'create']);
 Route::post('/employee-profiles/create', [EmployeeProfileController::class, 'store']);
 Route::patch('/employee-profiles/update/{id}', [EmployeeProfileController::class, 'update'])->name('employee.update');

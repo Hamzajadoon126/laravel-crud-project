@@ -56,7 +56,7 @@ class EmployeeProfileController extends Controller
           
         $id->update($input);
     
-        return redirect()->back()
+        return redirect()->route('employee-profiles')
                         ->with('success','user profile updated successfully');
     }
 
